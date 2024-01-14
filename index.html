@@ -5,7 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/portfolioWebsite/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aryans Portfolio Website</title>
-    <script type="module" crossorigin src="/portfolioWebsite/assets/index-bR9YNEsc.js"></script>
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/portfolioWebsite/assets/index-RC8TU5MS.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolioWebsite/assets/index-ar69Q0ql.css">
   </head>
   <body>

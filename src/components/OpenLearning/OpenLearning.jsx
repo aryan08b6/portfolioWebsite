@@ -1,7 +1,7 @@
 import React from "react";
 import ThumbCard from "../ThumbCard/ThumbCard";
 
-function Projects() {
+function OpenLearning() {
   const items = [
     {
       name: "Chai Or React",
@@ -38,4 +38,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default OpenLearning;

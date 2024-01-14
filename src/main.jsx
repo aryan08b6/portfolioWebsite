@@ -7,7 +7,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Github , {githubInfoLoader} from './components/Github/Github'
-import OL from './components/openLearning/OL.jsx'
+import OpenLearning from './components/OpenLearning/OpenLearning.jsx'
 import Projects from './components/Projects/Projects.jsx'
 
 
@@ -15,7 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='/' element = {<Home/>} />
-      <Route path='/openLearning' element = {<OL/>} />
+      <Route path='/openLearning' element = {<OpenLearning/>} />
       <Route path='/projects' element = {<Projects/>} />
       <Route path='about' element = {<About/>} />
       <Route path='contact' element = {<Contact/>} />

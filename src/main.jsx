@@ -15,8 +15,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/portfolioWebsite/' element={<Layout/>}>
       <Route path='/portfolioWebsite/' element = {<Home/>} />
-      <Route path='/openLearning' element = {<OpenLearning/>} />
-      <Route path='/projects' element = {<Projects/>} />
+      <Route path='openLearning' element = {<OpenLearning/>} />
+      <Route path='projects' element = {<Projects/>} />
       <Route path='about' element = {<About/>} />
       <Route path='contact' element = {<Contact/>} />
       <Route loader={githubInfoLoader} path='github' element = {<Github/>} />

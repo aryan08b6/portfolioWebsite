@@ -13,8 +13,8 @@ import Projects from './components/Projects/Projects.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
-      <Route path='/' element = {<Home/>} />
+    <Route path='/portfolioWebsite/' element={<Layout/>}>
+      <Route path='/portfolioWebsite/' element = {<Home/>} />
       <Route path='/openLearning' element = {<OpenLearning/>} />
       <Route path='/projects' element = {<Projects/>} />
       <Route path='about' element = {<About/>} />

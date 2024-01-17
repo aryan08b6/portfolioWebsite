@@ -1,26 +1,32 @@
 import React from "react";
+import {useNavigate} from "react-router-dom"
 
-const ThumbCard = ({
-  name = "sample",
+
+export function ThumbCard({
+  rId=0,
+  title = "sample",
   content = "this is a sample",
   tags = ["#tech", "#opencv", "#machineLearning"],
-  buttonText = "continue",
+  buttonText = "Read",
   img = "",
-}) => {
+}) {
+
+  const navigate = useNavigate();
+
   return (
     <div className="w-[300px] rounded-md border">
       <img
         src={img}
         alt="Will Be Updated Soon"
-        className="h-[200px] w-full rounded-t-md object-none"
+        className="h-[200px] w-[full] rounded-t-md object-scale-down"
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold overflow-ellipsis h-10">
           {(() => {
-            if (name.length > 22) {
-              return name.substring(0, 20) + "..";
+            if (title.length > 22) {
+              return title.substring(0, 20) + "..";
             } else {
-              return name;
+              return title;
             }
           })()}
           <svg
@@ -54,6 +60,7 @@ const ThumbCard = ({
       <button
         type="button"
         className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+        onClick={() => navigate(`/portfolioWebsite/resource/${rId}`)}
       >
         {buttonText}
       </button>

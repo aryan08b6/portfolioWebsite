@@ -3,7 +3,7 @@ import ThumbCard from "../ThumbCard/ThumbCard";
 
 function OpenLearning() {
   const items = [
-    {
+    { 
       name: "Chai Or React",
       img: "https://i.ytimg.com/vi/vz1RlUyrc3w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkOieEFJEYUD5zkDR0IqVos_hAPQ",
       tags: ["#frontent", "#react"]
@@ -28,10 +28,10 @@ function OpenLearning() {
   ];
   return (
     <>
-      <div className="text-center text-bold text-3xl w-5 m-5 my-11">Projects</div>
+      <div className="text-center text-bold text-3xl m-5 my-11">Open Learning: The Place To Share All I Learn</div>
       <div className="flex flex-wrap justify-center items-center space-x-5 h-1/3">
           {items.map((item, index) => (
-            <ThumbCard name={item.name} tags={item.tags} img={item.img}/>
+            <ThumbCard title={item.name} tags={item.tags} img={item.img}/>
           ))}
       </div>
     </>

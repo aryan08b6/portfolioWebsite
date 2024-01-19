@@ -4,7 +4,13 @@ import {useLoaderData} from 'react-router-dom'
 function Github() {
   const data = useLoaderData()
   return (
-    <div>Github Followers: {data.followers}</div>
+    <div>
+      <img className='mx-auto my-4' src={data.avatar_url} alt="Github Avatar" />
+      <h1 className='text-center'>Github Followers: {`${data.followers} Consider Giving a Follow :)`}</h1>
+      <div className='mx-auto text-center'>
+        <a href={data.html_url} target="_blank" rel="noreferrer">Github URL</a>
+      </div>
+    </div>
   )
 }
 

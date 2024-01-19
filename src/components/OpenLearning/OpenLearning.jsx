@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ThumbCard from "../ThumbCard/ThumbCard";
-import items from "../Resources/resources.json"
+import useResources from "../../hooks/Resources";
 
 function OpenLearning() {
+
+  const items = useResources()
+
   return (
     <>
       <div className="text-center text-bold text-3xl m-5 my-11">Open Learning: The Place To Share All I Learn</div>
@@ -10,7 +13,7 @@ function OpenLearning() {
         {items.map((item, index) => {
           if (item.type === "OpenLearning") {
             return (
-              <ThumbCard data={item} key={item.rId}/>
+              <ThumbCard data={item} key={item.rId} />
             );
           }
         })}

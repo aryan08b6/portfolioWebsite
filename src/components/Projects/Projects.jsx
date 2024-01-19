@@ -1,8 +1,11 @@
 import React from "react";
 import ThumbCard from "../ThumbCard/ThumbCard";
-import items from "../Resources/resources.json"
+import useResources from "../../hooks/Resources";
 
 function Projects() {
+
+  const items = useResources()
+
   return (
     <>
       <div className="text-bold text-3xl text-center m-5 my-11">Projects: What i have made so far</div>

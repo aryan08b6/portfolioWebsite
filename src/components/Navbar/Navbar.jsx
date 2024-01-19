@@ -20,6 +20,10 @@ const menuItems = [
     href: "projects",
   },
   {
+    name: "Github",
+    href: "github",
+  },
+  {
     name: "Contact",
     href: "contact",
   },

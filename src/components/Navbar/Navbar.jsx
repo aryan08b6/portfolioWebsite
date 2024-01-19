@@ -101,7 +101,7 @@ export default function Navbar() {
                         />
                       </svg>
                     </span>
-                    <span className="font-bold">DevUI</span>
+                    <span className="font-bold">Aryan's Portfolio</span>
                   </div>
                   <div className="-mr-2">
                     <button

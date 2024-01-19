@@ -2,16 +2,11 @@ import React from "react";
 import {useNavigate} from "react-router-dom"
 
 
-export function ThumbCard({
-  rId=0,
-  title = "sample",
-  content = "this is a sample",
-  tags = ["#tech", "#opencv", "#machineLearning"],
-  buttonText = "Read",
-  img = "",
-}) {
+export function ThumbCard({data={}}) {
 
   const navigate = useNavigate();
+
+  const {title, img, tags, rId, content="", buttonText="Read More", links} = data
 
   return (
     <div className="w-[300px] rounded-md border">
@@ -45,7 +40,15 @@ export function ThumbCard({
             <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
         </h1>
-        <p className="mt-3 text-sm text-gray-600">{content}</p>
+        <p className="mt-3 text-sm text-gray-600">
+        {(() => {
+            if (content.length > 22) {
+              return content.substring(0, 20) + "..";
+            } else {
+              return content;
+            }
+          })()}
+        </p>
         <div className="h-8 overflow-auto">
           {tags.map((tag, index) => (
             <span
@@ -60,7 +63,7 @@ export function ThumbCard({
       <button
         type="button"
         className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-        onClick={() => navigate(`/portfolioWebsite/resource/${rId}`)}
+        onClick={() => navigate(`/portfolioWebsite/resource/${rId}`, { state: { resourceData: data } })}
       >
         {buttonText}
       </button>

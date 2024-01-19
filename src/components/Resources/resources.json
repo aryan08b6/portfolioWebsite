@@ -1,0 +1,73 @@
+[
+    {
+        "rId": 1,
+        "type": "project",
+        "title": "Edge Computing Drone",
+        "img": "https://sumanastech.com/wp-content/uploads/2019/09/What-is-Edge-Computing.png",
+        "tags": ["#dronekit", "#mavlink", "#sockets", "#raspberryPi"]
+      },
+      {
+        "rId": 2,
+        "type": "project",
+        "title": "DeliveryDrone",
+        "img": "https://img.freepik.com/free-vector/young-man-working-with-drone-delivery-service-technology-cartoon-character-vector-illustrations-drone-delivery-concept_1150-56243.jpg?t=st=1705489461~exp=1705490061~hmac=5177c5d8d2979f167eab3583fa1487e50ea97043c37f7cc12a7a2bffa27aaf92",
+        "tags": ["#dronekit", "#mavlink", "#gps", "#onshape"]
+      },
+      {
+        "rId": 3,
+        "type": "project",
+        "title": "Portfolio Website",
+        "img": "https://img.freepik.com/free-vector/single-page-application-abstract-concept-illustration-spa-web-page-web-development-trend-app-inside-browser-dynamically-rewriting-page-responsive-website-creation_335657-899.jpg?t=st=1705489626~exp=1705490226~hmac=30d20a7ceb48a52816fe87209fff63cb73ef142241b236342ca39a8b3f47dc80",
+        "tags": ["#react", "#taiwind", "#webdev"]
+      },
+      {
+        "rId": 4,
+        "type": "project",
+        "title": "YT Clone with Complete Backend",
+        "img": "https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s176-c-k-c0x00ffffff-no-rj",
+        "tags": [
+          "#react",
+          "#express",
+          "#jwt",
+          "#mongoose",
+          "#cloudinary",
+          "#bcrypt",
+          "#backend",
+          "#webdev"
+        ]
+      },
+      { 
+      "title": "Chai Or React",
+      "rId": 5,
+      "type": "OpenLearning",
+      "img": "https://i.ytimg.com/vi/vz1RlUyrc3w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkOieEFJEYUD5zkDR0IqVos_hAPQ",
+      "tags": ["#frontent", "#react"],
+      "content": "This is a great series on react along with appwrite, I would say react is a very powerful libray with alot of functionality, the main working or react is with hooks and props, react allows you to create Single page applications, the course also touches on more advanced topics such as state manangement with redux and routing with react router dom overall a really solid course and will enable you to make any project using react for free thanks to mr hitesh for providing such an amazing and complete course",
+      "worthIt": true,
+      "rating": 4.75,
+      "links" : [{"name": "Google As Always the best resource", "link": "https://www.google.com/"}]
+    },
+    {
+      "title": "Chai or Javascript Backend",
+      "rId": 5,
+      "type": "OpenLearning",
+      "img": "https://i.ytimg.com/vi/EH3vGeqeIAo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjy0w9nTPh-GiQJryhx9x-rbRO0Q", 
+      "tags": ["#Javascript", "#Express", "#backend", "#mongoose"]
+    },
+    {
+      "title": "IBM AI Enginner Course",
+      "rId": 6,
+      "type": "OpenLearning",
+      "img": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png?auto=format%2Ccompress&dpr=1&w=&h=45",
+      "tags": ["#ML", "#Deep Learning", "#CV"]
+    },
+    {
+      "title": "ROS",
+      "rId": 7,
+      "type": "OpenLearning",
+      "img": "https://docs.ros.org/en/iron/_static/iron-small.png",
+      "tags": [
+        "#Robotics"
+      ]
+    }
+]

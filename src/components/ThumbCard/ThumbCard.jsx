@@ -9,7 +9,7 @@ export function ThumbCard({data={}}) {
   const {title, img, tags, rId, content="", buttonText="Read More", links} = data
 
   return (
-    <div className="w-[300px] rounded-md border">
+    <div className="w-[300px] rounded-md border m-2">
       <img
         src={img}
         alt="Will Be Updated Soon"
@@ -60,6 +60,7 @@ export function ThumbCard({data={}}) {
           ))}
         </div>
       </div>
+      
       <button
         type="button"
         className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
